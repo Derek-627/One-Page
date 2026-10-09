@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth; /*Es el efecto de scrolling as*/
+}
+
+.contenido{
+    height: 100vh; /*PAra que el contenido se ajuste al tamaño del view height*/
+    background-size: 100% auto; /*X al 100% Y en Automático*/
+    background-repeat: no-repeat; /*Para que no se repitan las imagenes de fondo*/
+    background-attachment: fixed; /*Para que la imagen se vea fija*/
+}
+
+#zona01{
+   background-image: url('../images/landing.jpg');
+
+}
+
+#zona02{
+   background-image: url('../images/soc.jpg');
+
+}
+
+#zona03{
+    background-image: url('../images/cs.jpg');
+}
+
+#zona04{
+    background-image: url('../images/cop.jpg');
+}
+
+#zona05{
+    background-image: url('../images/anom.jpg');
+}
+
+/*MENU*/
+nav{
+    position: fixed; /*Hace que el menu no se mueva xdxdxd*/
+    left: 200px; /*Desde la posicion izquierda lo mueve a 200px de la pantalla*/
+    top: 20%; /*desde arriba baja la caja un %*/
+    z-index: 100;
+    transition: 0.4s ease; /*añade una transicion*/
+    transform: translateX(-50%); /*hace que se mueva a la derecha con las propiedades de transition*/
+}
+
+ul{
+    list-style: none; /*Quita los puntitos*/
+}
+
+ul a{
+    display: block; /*hace que se comporten como cuadritos*/
+    color: #80B425; 
+    text-decoration: none; /*Quita los puntitos del texto*/
+    height: 70px;  /*le da alutra para separar las cajitas*/
+    border: 1px solid #167d10; /*añade el borde de la cajita*/
+    text-align: center; 
+    width: 150px; /*que todas las cajitas tengan el mismo ancho*/
+    padding: 13px; /*centra el texto*/
+    transition: 0.4s ease;
+}
+
+ul a:hover{
+    background-color: #80B425;
+    color: #ccedcc;
+    transform: translateX(10%); /*Que la caja se mueva a la izquierda*/
+}
